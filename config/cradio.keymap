@@ -32,87 +32,58 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        0 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  3       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp N3          &kp Y      &kp U      &mo 4      &mo 2      &kp P
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │   5      │
+       
+    
+            &kp Q      &kp W      &kp E      &kp R      &kp N3          &kp Y      &kp U      &mo 4      &mo 2      &mo 5
             &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V      │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V     &kp B          &kp N      &kp M      &kp COMMA   &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N5   &kp ENTER     &mo 1     &kp F14
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &mo 0      &mo 3      &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &mo 1     &kp F14
+
             >;
         };
 
-        right_layer {
+        1 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  333     │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Q      &kp W      &kp E      &kp A      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
+            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &kp G      &kp F14
             >;
         };
 
-        left_layer {
+        2 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp A   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Q      &kp W      &kp E      &kp B      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
+            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &kp G      &kp F14
             >;
         };
 
-        tri_layer {
+        3 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &kp B     &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Q      &kp W      &kp E      &kp C      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
+            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &kp G      &kp F14
             >;
         };
-quad_layer {
+4 {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &kp C     &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            &kp Q      &kp W      &kp E      &kp D      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
+            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &kp G      &kp F14
+            >;
+        };
+5 {
+            bindings = <
+            &kp Q      &kp W      &kp E      &kp E      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
+            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5   &kp ENTER        &kp G      &kp F14
             >;
         };
     };
