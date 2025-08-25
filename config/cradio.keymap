@@ -21,32 +21,32 @@
     keymap {
         compatible = "zmk,keymap";
         0 {
-            bindings = <
-       
-    
-            &kp Q      &kp W      &kp E      &kp R      &kp N3          &kp Y      &kp U      &kp N3     &kp N4     &kp N5 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N6
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp N2     &kp N7      &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp N1     &kp N8
+            bindings = <    
 
+&kp J       &kp LSHFT   &kp C       &kp I        &kp BSPC       &kp A        &kp ENTER      &mo 2       &mo 3        &kp O 
+&mo 4       &kp S       &kp COMMA   &kp L        &kp V          &kp DOT      &kp P          &kp Z       &kp E        &kp B
+&kp R       &kp D       &kp M       &kp G        &kp K          &kp U        &kp W          &kp Y       &kp H        &kp N
+                                    &kp T        &kp SPACE      &mo 1        &kp F14
             >;
         };
 
         1 {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp A      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp G      &kp F14
+
+&kp N6      &kp MINUS   &kp STAR    &kp DOT      &kp BSPC       &kp F17      &kp F15        &none       &none        &kp F19 
+&kp BSLH    &kp N8      &kp PLUS    &kp N1       &kp N4         &kp F16      &kp F20        &kp F21     &kp RIGHT    &none 
+&kp N9      &kp N5      &kp N2      &kp N7       &kp N3         &kp F23      &kp F22        &kp UP      &kp F18      &kp DOWN
+                                    &kp N0       &kp SPACE      &none        &kp LEFT
             >;
         };
 
         2 {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp B      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp G      &kp F14
+
+&kp LBRC    &none       &kp RBKT    &kp AMPS     &kp LBKT       &kp TAB      &kp TILDE      &none       &none        &kp SEMI 
+&none       &kp LPAR    &none       &kp GRAVE    &kp LT         &kp FSLH     &kp HASH       &kp CARET   &kp UNDER    &none 
+&kp RPAR    &kp GT      &kp PIPE    &kp RBRC     &kp PRCNT      &kp AT       &kp COLON      &kp SQT     &kp EQUAL    &kp EXCL
+                                    &kp DQT      &kp DLLR       &none        &kp QMARK
             >;
         };
 
