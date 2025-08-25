@@ -52,26 +52,27 @@
 
         3 {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp C      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp G      &kp F14
+
+&kp J       &kp LSHFT   &kp C       &kp I        &kp BSPC       &kp LCTL     &kp ENTER       &mo 1       &to 0        &kp LC(TAB) 
+&kp LALT    &kp S       &none       &kp L        &kp V          &kp LA(LEFT) &kp RC(LS(Z))   &kp F5      &kp RALT     &kp LC(W)
+&kp R       &kp D       &kp M       &kp G        &kp K          &kp LA(TAB)  &kp LC(LS(TAB)) &kp LC(Z)   &kp LA(LEFT) &kp F24
+                                    &kp T        &kp SPACE      &mo 4        &kp F14
             >;
         };
 4 {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp D      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp G      &kp F14
+&kp Z       &kp LC(F)   &kp O       &kp A        &kp W          &kp END      &kp HOME        &none       &none        &kp C_NEXT 
+&none       &kp F       &kp E       &kp U        &kp B          &kp K_PASTE  &kp J           &kp RC(F18) &kp ESC      &kp RC(F17) 
+&kp X       &kp N       &kp Y       &kp H        &kp P          &kp K_PP     &kp K_PREV      &kp L       &kp K_COPY   &kp DEL
+                                    &kp Q        &kp SPACE      &none        &kp F13
             >;
         };
 5 {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp E      &kp N3          &kp Y      &kp U     &kp D       &kp D       &kp D 
-            &kp A      &kp  S      &kp  D     &kp F     &kp G          &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V     &kp B           &kp F      &kp E       &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5   &kp ENTER        &kp G      &kp F14
+            &kp Q      &kp W      &kp E      &kp E      &kp N3          &kp Y      &kp U      &kp D       &kp D      &kp D 
+            &kp A      &kp  S     &kp  D     &kp F      &kp G           &kp H      &kp J      &kp  K      &kp  L     &kp N5
+            &kp Z      &kp X      &kp C      &kp V      &kp B           &kp F      &kp E      &kp COMMA   &kp DOT    &kp FSLH
+                                             &kp N5     &kp ENTER       &kp G      &kp F14
             >;
         };
     };
