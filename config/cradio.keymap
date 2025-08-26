@@ -23,56 +23,48 @@
         0 {
             bindings = <    
 
-&kp J       &kp LSHFT   &kp C       &kp I        &kp BSPC       &kp A        &kp ENTER      &mo 2       &mo 3        &kp O 
-&mo 4       &kp S       &kp COMMA   &kp L        &kp V          &kp DOT      &kp P          &kp Z       &kp E        &kp B
-&kp R       &kp D       &kp M       &kp G        &kp K          &kp U        &kp W          &kp Y       &kp H        &kp N
-                                    &kp T        &kp SPACE      &mo 1        &kp F14
+&kp J       &mo 4       &kp C       &kp I        &kp BSPC       &kp A        &kp ENTER       &mo 2       &to 3        &kp O 
+&kp COMMA   &kp S       &kp SPACE   &kp L        &kp V          &kp DOT      &kp P           &kp Z       &kp E        &kp B
+&kp R       &kp D       &kp M       &kp G        &kp K          &kp U        &kp W           &kp Y       &kp H        &kp N
+                                    &kp T        &kp LSHFT      &mo 1        &kp F14
             >;
         };
 
         1 {
             bindings = <
 
-&kp N6      &kp MINUS   &kp STAR    &kp DOT      &kp BSPC       &kp F17      &kp F15        &none       &none        &kp F19 
-&kp BSLH    &kp N8      &kp PLUS    &kp N1       &kp N4         &kp F16      &kp F20        &kp F21     &kp RIGHT    &none 
-&kp N9      &kp N5      &kp N2      &kp N7       &kp N3         &kp F23      &kp F22        &kp UP      &kp F18      &kp DOWN
-                                    &kp N0       &kp SPACE      &none        &kp LEFT
+&kp N6      &kp FSLH    &kp STAR    &kp DOT      &kp BSPC       &kp F17      &kp F15         &none       &none        &kp F19 
+&kp PLUS    &kp N8      &kp SPACE   &kp N1       &kp N4         &kp F16      &kp F20         &kp F21     &kp RIGHT    &none 
+&kp N9      &kp N5      &kp N2      &kp N7       &kp N3         &kp F23      &kp F22         &kp UP      &kp F18      &kp DOWN
+                                    &kp N0       &kp MINUS      &none        &kp LEFT
             >;
         };
 
         2 {
             bindings = <
 
-&kp LBRC    &none       &kp RBKT    &kp AMPS     &kp LBKT       &kp TAB      &kp TILDE      &none       &none        &kp SEMI 
-&none       &kp LPAR    &none       &kp GRAVE    &kp LT         &kp FSLH     &kp HASH       &kp CARET   &kp UNDER    &none 
-&kp RPAR    &kp GT      &kp PIPE    &kp RBRC     &kp PRCNT      &kp AT       &kp COLON      &kp SQT     &kp EQUAL    &kp EXCL
-                                    &kp DQT      &kp DLLR       &none        &kp QMARK
+&kp LBRC    &none       &kp RBKT    &kp AMPS     &kp LBKT       &kp TAB      &kp TILDE       &none       &none        &kp SEMI 
+&none       &kp LPAR    &kp DLLR    &kp GRAVE    &kp LT         &kp BSLH     &kp HASH        &kp CARET   &kp UNDER    &none 
+&kp RPAR    &kp GT      &kp PIPE    &kp RBRC     &kp PRCNT      &kp AT       &kp COLON       &kp SQT     &kp EQUAL    &kp EXCL
+                                    &kp DQT      &none          &none        &kp QMARK
             >;
         };
 
         3 {
             bindings = <
 
-&kp J       &kp LSHFT   &kp C       &kp I        &kp BSPC       &kp LCTL     &kp ENTER       &mo 1       &to 0        &kp LC(TAB) 
-&kp LALT    &kp S       &none       &kp L        &kp V          &kp LA(LEFT) &kp RC(LS(Z))   &kp F5      &kp RALT     &kp LC(W)
+&kp J       &kp LALT    &kp C       &kp I        &kp BSPC       &kp LCTL     &kp ENTER       &mo 1       &to 0        &kp LC(TAB) 
+&none       &kp S       &kp SPACE   &kp L        &kp V          &kp LA(LEFT) &kp RC(LS(Z))   &kp F5      &kp RALT     &kp LC(W)
 &kp R       &kp D       &kp M       &kp G        &kp K          &kp LA(TAB)  &kp LC(LS(TAB)) &kp LC(Z)   &kp LA(LEFT) &kp F24
-                                    &kp T        &kp SPACE      &mo 4        &kp F14
+                                    &kp T        &kp LSHFT      &mo 4        &kp F14
             >;
         };
 4 {
             bindings = <
-&kp Z       &kp LC(F)   &kp O       &kp A        &kp W          &kp END      &kp HOME        &none       &none        &kp C_NEXT 
-&none       &kp F       &kp E       &kp U        &kp B          &kp K_PASTE  &kp J           &kp RC(F18) &kp ESC      &kp RC(F17) 
+&kp Z       &none       &kp O       &kp A        &kp W          &kp END      &kp HOME        &none       &none        &kp C_NEXT 
+&kp E       &kp F       &kp SPACE   &kp U        &kp B          &kp K_PASTE  &kp J           &kp RC(F18) &kp ESC      &kp RC(F17) 
 &kp X       &kp N       &kp Y       &kp H        &kp P          &kp K_PP     &kp K_PREV      &kp L       &kp K_COPY   &kp DEL
-                                    &kp Q        &kp SPACE      &none        &kp F13
-            >;
-        };
-5 {
-            bindings = <
-            &kp Q      &kp W      &kp E      &kp E      &kp N3          &kp Y      &kp U      &kp D       &kp D      &kp D 
-            &kp A      &kp  S     &kp  D     &kp F      &kp G           &kp H      &kp J      &kp  K      &kp  L     &kp N5
-            &kp Z      &kp X      &kp C      &kp V      &kp B           &kp F      &kp E      &kp COMMA   &kp DOT    &kp FSLH
-                                             &kp N5     &kp ENTER       &kp G      &kp F14
+                                    &kp Q        &kp LC(F)      &none        &kp F13
             >;
         };
     };
