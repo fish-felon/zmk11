@@ -62,8 +62,8 @@
 4 {
             bindings = <
 &kp Z       &none       &kp O       &kp A        &kp W          &kp END        &kp HOME        &none       &none         &kp C_NEXT 
-&kp E       &kp F       &kp SPACE   &kp U        &kp B          &kp C_AC_PASTE &kp J           &kp RC(F18) &kp ESC       &kp RC(F17) 
-&kp X       &kp N       &kp Y       &kp H        &kp P          &kp C_PP       &kp C_PREV      &kp L       &kp C_AC_COPY &kp DEL
+&kp E       &kp F       &kp SPACE   &kp U        &kp B          &kp RC(V)      &kp J           &kp RC(F18) &kp ESC       &kp RC(F17) 
+&kp X       &kp N       &kp Y       &kp H        &kp P          &kp C_PP       &kp C_PREV      &kp L       &kp RC(C)     &kp DEL
                                     &kp Q        &kp LC(F)      &none          &kp F13
             >;
         };
