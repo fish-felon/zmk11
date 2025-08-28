@@ -23,7 +23,7 @@
         0 {
             bindings = <    
 
-&kp J       &mo 4       &kp C       &kp I        &kp BSPC       &kp N          &kp ENTER       &mo 2       &to 3         &kp O 
+&kp J       &mo 4       &kp C       &kp I        &kp BSPC       &kp O          &kp ENTER       &mo 2       &to 3         &kp N 
 &kp COMMA   &kp S       &kp SPACE   &kp L        &kp V          &kp DOT        &kp P           &kp Z       &kp A         &kp B
 &kp R       &kp D       &kp M       &kp G        &kp K          &kp U          &kp W           &kp Y       &kp H         &kp E
                                     &kp T        &kp LSHFT      &mo 1          &kp F14
