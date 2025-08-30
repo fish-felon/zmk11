@@ -43,10 +43,10 @@
         2 {
             bindings = <
 
-&kp LBRC    &none       &kp RBKT    &kp AMPS     &kp LBKT       &kp TAB        &kp TILDE       &none       &none         &kp SEMI 
-&none       &kp LPAR    &kp DLLR    &kp GRAVE    &kp LT         &kp BSLH       &kp HASH        &kp CARET   &kp UNDER     &none 
-&kp RPAR    &kp GT      &kp PIPE    &kp RBRC     &kp PRCNT      &kp AT         &kp COLON       &kp SQT     &kp EQUAL     &kp EXCL
-                                    &kp DQT      &none          &none          &kp QMARK
+&kp LBRC    &kp GRAVE   &kp RBKT    &kp AMPS     &kp LBKT       &kp TAB        &kp TILDE       &none       &none         &kp SEMI 
+&kp CARET   &kp LPAR    &kp SPACE   &kp F        &kp LT         &kp BSLH       &kp HASH        &kp PIPE    &kp UNDER     &kp PRCNT
+&kp RPAR    &kp GT      &kp X       &kp RBRC     &kp Q          &kp AT         &kp COLON       &kp SQT     &kp EQUAL     &kp EXCL
+                                    &kp DQT      &kp DLLR       &none          &kp QMARK
             >;
         };
 
@@ -61,10 +61,10 @@
         };
 4 {
             bindings = <
-&kp Z       &none       &kp O       &kp A        &kp W          &kp END        &kp HOME        &none       &none         &kp C_NEXT 
-&kp E       &kp F       &kp SPACE   &kp U        &kp B          &kp RC(V)      &kp J           &kp RC(F18) &kp ESC       &kp RC(F17) 
-&kp X       &kp N       &kp Y       &kp H        &kp P          &kp C_PP       &kp C_PREV      &kp L       &kp RC(C)     &kp DEL
-                                    &kp Q        &kp LC(F)      &none          &kp F13
+&kp Z       &none       &kp O       &kp E        &kp W          &kp END        &kp HOME        &none       &none         &kp C_NEXT 
+&none       &kp F       &kp SPACE   &kp U        &kp H          &kp RC(V)      &kp J           &kp RC(F18) &kp ESC       &kp RC(F17) 
+&kp X       &kp N       &kp Y       &kp B        &kp P          &kp C_PP       &kp C_PREV      &kp L       &kp RC(C)     &kp DEL
+                                    &kp A        &kp LC(F)      &none          &kp F13
             >;
         };
     };
